@@ -560,7 +560,7 @@ input:-moz-placeholder {
 }
 
 .custom-checkbox:checked + label::before {
-  background: url(..img/check2.png) no-repeat center center;
+  background: url(../img/check2.png) no-repeat center center;
   background-size: 8px;
 }
 
@@ -1296,10 +1296,10 @@ input:-moz-placeholder {
     top: -9px;
     z-index: 11;
     overflow: hidden;
-    background: url(..img/bur1.png) no-repeat center center;
+    background: url(../img/bur1.png) no-repeat center center;
   }
   .menu-btn.active {
-    background: url(..img/bur2.svg) no-repeat center center;
+    background: url(../img/bur2.svg) no-repeat center center;
   }
   .menu {
     position: fixed;
@@ -1746,5 +1746,13 @@ input:-moz-placeholder {
   }
   .header__row {
     gap: 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .header__row div {
+    width: 48.3%;
+  }
+  .header__row div img {
+    margin-right: 12px;
   }
 }
