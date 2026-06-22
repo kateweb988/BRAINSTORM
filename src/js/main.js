@@ -40,17 +40,11 @@ document.addEventListener('DOMContentLoaded', function () {
     $.arcticmodal('close');
 
   });
-  $('.a1').click(function (e) {
+  $('.btn').click(function (e) {
     e.preventDefault();
     $('#popup-call').arcticmodal({
     });
   });
-  $('.a2, .link').click(function (e) {
-    e.preventDefault();
-    $('#popup-call2').arcticmodal({
-    });
-  });
-
 });
 document.addEventListener("DOMContentLoaded", () => {
   $(document).ready(function () {

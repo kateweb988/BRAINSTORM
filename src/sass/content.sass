@@ -8,51 +8,6 @@ input:-moz-placeholder
    color: rgba(250, 250, 255, 0.6) !important
 .menu-btn, .menu
    display: none
-.close-popup
-   position: absolute
-   top: 15px
-   right: 15px
-   cursor: pointer
-   width: 26px
-   height: 26px
-   z-index: 20
-   transform: rotate(0deg)
-   transition: 0.5s
-   &:hover 
-      transform: rotate(90deg)
-.popup__bg, .popup__bg2, .popup__bg3
-   position: fixed
-   top: 0
-   left: 0
-   width: 100%
-   height: 100vh
-   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(image.png)
-   backdrop-filter: blur(5.5px)
-   opacity: 0
-   pointer-events: none
-   transition: 0.5s all
-   overflow-y: auto
-   overflow-x: hidden
-.popup__bg.active, .popup__bg2.active, .popup__bg3.active
-   opacity: 1
-   pointer-events: all
-   transition: 0.5s all
-   z-index: 22
-.popup, .popup2, .popup3
-   position: absolute
-   top: 49%
-   left: 50%
-   transform: translate(-50%, -50%) scale(0)
-   width: 1152px
-   height: auto
-   transition: 0.5s all
-   padding: 50px
-   background: #05060A
-   border: 1px solid rgba(255, 255, 255, 0.2)
-   border-radius: 26px
-.popup.active, .popup2.active, .popup3.active
-   transform: translate(-50%, -46%) scale(1)
-   transition: 0.5s all
 .box-modal__close 
    z-index: 10
    cursor: pointer
@@ -75,20 +30,59 @@ input:-moz-placeholder
    position: relative
 .popup-call__box 
    position: absolute
-   top: -25rem
+   top: -16rem
    left: 50%
    height: auto
-   margin-left: -282px
+   margin-left: -295px
    overflow: hidden
    height: max-content
    transition: 0.5s all
-   height: auto
-   width: 564px
-   padding: 52px
    box-sizing: border-box
-   border: 1px solid rgb(255, 255, 255)
-   border-radius: 8px
-   background: rgb(255, 255, 255)
+   width: 590px
+   background: #000000
+   border-radius: 15px
+   padding: 32px
+   h2 
+      margin-bottom: 17px
+label.error 
+   display: none !important
+.popup
+   &__sub 
+      font-size: 12px
+      font-weight: 400
+      color: #808080
+      line-height: 16px
+      a 
+         color: $red 
+         text-decoration: underline
+         &:hover 
+            color: white
+   &__text 
+      font-size: 21px
+      line-height: 23px 
+      margin-bottom: 24px
+      font-weight: 400
+      text-align: center
+      color: #ffffff
+   &__form 
+      width: 100%
+      button 
+         border: none 
+         width: 100%
+         font-size: 18px
+         margin-bottom: 30px
+      input 
+         margin-bottom: 24px
+         width: 100%
+         background: #000000
+         padding-left: 24px
+         height: 60px
+         border: 1px solid #ffffff
+         font-size: 18px
+         font-weight: 400
+         color: #ffffff
+         &:focus
+            border: 1px solid $red
 .menu-btn, .menu
    display: none
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
